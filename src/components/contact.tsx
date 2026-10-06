@@ -32,7 +32,7 @@ export function Contact() {
   });
 
   return (
-    <section id='contact' className='mt-14 scroll-mt-20 sm:mt-[72px]'>
+    <section id='contact' className='mt-12 scroll-mt-20 sm:mt-16'>
       <SectionHeading>Contact</SectionHeading>
       <div className='flex flex-col items-start gap-2'>
         <div className='flex items-center gap-3'>

@@ -1,11 +1,4 @@
-import { Button } from '@/components/ui/button';
 import { ThemeToggle } from '@/components/theme-toggle';
-
-const nav = [
-  { label: 'Work', href: '#work' },
-  { label: 'About', href: '#about' },
-  { label: 'Contact', href: '#contact' },
-];
 
 export function SiteHeader() {
   return (
@@ -19,13 +12,6 @@ export function SiteHeader() {
         </div>
         <ThemeToggle />
       </div>
-      <nav className='mt-6 flex flex-wrap items-center gap-2'>
-        {nav.map((item) => (
-          <Button key={item.href} asChild variant='ghost' size='sm'>
-            <a href={item.href}>{item.label}</a>
-          </Button>
-        ))}
-      </nav>
     </header>
   );
 }

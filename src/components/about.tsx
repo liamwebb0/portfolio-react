@@ -2,7 +2,7 @@ import { SectionHeading } from '@/components/section-heading';
 
 export function About() {
   return (
-    <section id='about' className='mt-14 scroll-mt-20 sm:mt-[72px]'>
+    <section id='about' className='mt-12 scroll-mt-20 sm:mt-16'>
       <SectionHeading>About</SectionHeading>
       <p className='max-w-[480px] leading-7'>
         I’m an engineering student at Polytech Nice-Sophia, interested in

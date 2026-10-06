@@ -1,5 +1,4 @@
 import { ArrowUpRight, Server } from 'lucide-react';
-import { Separator } from '@/components/ui/separator';
 import { Badge } from '@/components/ui/badge';
 import {
   Accordion,
@@ -50,36 +49,34 @@ function ProjectTitle({ project }: { project: Project }) {
 
 export function Experience() {
   return (
-    <section id='work' className='mt-14 scroll-mt-20 sm:mt-[72px]'>
+    <section id='work' className='mt-12 scroll-mt-20 sm:mt-16'>
       <SectionHeading>Experience</SectionHeading>
-      <div>
-        <Separator />
-        <Accordion type='single' collapsible>
-          {projects.map((project, i) => (
-            <div key={project.title}>
-              <AccordionItem value={`item-${i}`} className='border-none'>
-                <AccordionTrigger className='group gap-4 hover:no-underline'>
-                  <span className='flex min-w-0 flex-1 flex-col gap-1.5 sm:flex-row sm:items-center sm:justify-between'>
-                    <ProjectTitle project={project} />
-                    <Badge
-                      variant='secondary'
-                      className='w-fit sm:ml-4 sm:whitespace-nowrap'
-                    >
-                      {project.meta}
-                    </Badge>
-                  </span>
-                </AccordionTrigger>
-                <AccordionContent>
-                  <p className='max-w-[480px] text-[15px] leading-7 text-muted-foreground'>
-                    {project.description}
-                  </p>
-                </AccordionContent>
-              </AccordionItem>
-              <Separator />
-            </div>
-          ))}
-        </Accordion>
-      </div>
+      <Accordion type='single' collapsible className='flex flex-col gap-2'>
+        {projects.map((project, i) => (
+          <AccordionItem
+            key={project.title}
+            value={`item-${i}`}
+            className='border-none'
+          >
+            <AccordionTrigger className='group gap-4 hover:no-underline'>
+              <span className='flex min-w-0 flex-1 flex-col gap-1.5 sm:flex-row sm:items-center sm:justify-between'>
+                <ProjectTitle project={project} />
+                <Badge
+                  variant='secondary'
+                  className='w-fit sm:ml-4 sm:whitespace-nowrap'
+                >
+                  {project.meta}
+                </Badge>
+              </span>
+            </AccordionTrigger>
+            <AccordionContent>
+              <p className='max-w-[480px] text-[15px] leading-7 text-muted-foreground'>
+                {project.description}
+              </p>
+            </AccordionContent>
+          </AccordionItem>
+        ))}
+      </Accordion>
     </section>
   );
 }
