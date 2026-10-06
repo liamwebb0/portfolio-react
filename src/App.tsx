@@ -11,9 +11,11 @@ const projects = [
 ];
 
 const socials = [
-  { label: 'GitHub', href: '#' },
-  { label: 'LinkedIn', href: '#' },
-  { label: 'X', href: '#' },
+  { label: 'GitHub', href: 'https://github.com/liamwebb0' },
+  {
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/liam-thomas-webb',
+  },
 ];
 
 export default function App() {
@@ -96,7 +98,9 @@ export default function App() {
           {socials.map((s, i) => (
             <span key={s.label}>
               <Button asChild>
-                <a href={s.href}>{s.label}</a>
+                <a href={s.href} target="_blank" rel="noopener noreferrer">
+                  {s.label}
+                </a>
               </Button>
               {i < socials.length - 1 && (
                 <span className='text-muted-foreground'> · </span>
