@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import { SiteHeader } from '@/components/site-header';
 import { Experience } from '@/components/experience';
 import { About } from '@/components/about';
@@ -12,6 +13,7 @@ export default function App() {
       <About />
       <Contact />
       <SiteFooter />
+      <Analytics />
     </main>
   );
 }
