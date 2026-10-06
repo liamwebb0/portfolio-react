@@ -41,6 +41,7 @@ export function Contact() {
             variant='default'
             size='default'
             onClick={copyEmail}
+            className='border border-neutral-300 bg-white text-black hover:opacity-90 dark:border-neutral-700 dark:bg-black dark:text-white'
           >
             {copied ? (
               <Check className='mr-2 h-4 w-4' aria-hidden />
@@ -63,7 +64,13 @@ export function Contact() {
         </div>
         <div className='flex flex-col items-start gap-2'>
           {orderedSocials.map((social) => (
-            <Button key={social.label} asChild variant='default' size='default'>
+            <Button
+              key={social.label}
+              asChild
+              variant='default'
+              size='default'
+              className='border border-neutral-300 bg-white text-black hover:opacity-90 dark:border-neutral-700 dark:bg-black dark:text-white'
+            >
               <a href={social.href} target='_blank' rel='noopener noreferrer'>
                 {social.label}
               </a>
