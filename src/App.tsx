@@ -1,4 +1,5 @@
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { SiteHeader } from '@/components/site-header';
 import { Experience } from '@/components/experience';
 import { Projects } from '@/components/projects';
@@ -16,6 +17,7 @@ export default function App() {
       <Contact />
       <SiteFooter />
       <Analytics />
+      <SpeedInsights />
     </main>
   );
 }

@@ -30,6 +30,14 @@ export const projects: Project[] = [
     description:
       'Self-hosted homelab focused on networking, virtualization, and cybersecurity. Set up and maintain servers, VMs, containers, and network infrastructure using Proxmox and OPNsense, experimenting with firewalls, routing, VLANs, VPNs, network segmentation, and access control.',
   },
+  {
+    title: 'Whytoff Game',
+    meta: '2025 - PeiP1',
+    href: 'https://github.com/liamwebb0/Whytoff_game',
+    logo: '/python-logo.svg',
+    description:
+      'Implementation of the Whytoff game in Python (Turtle) done in PeiP1 class. Three variants: (1) classic rules version, (2) version with no limit on the number of objects you can take, (3) version where the computer applies the winning strategy and systematically wins.',
+  },
 ];
 
 export const socials = [
