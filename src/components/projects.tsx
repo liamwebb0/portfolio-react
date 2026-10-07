@@ -7,7 +7,7 @@ import {
   AccordionTrigger,
 } from '@/components/ui/accordion';
 import { SectionHeading } from '@/components/section-heading';
-import { experience, type Project } from '@/data/content';
+import { projects, type Project } from '@/data/content';
 
 function ProjectLogo({ project }: { project: Project }) {
   return (
@@ -47,12 +47,12 @@ function ProjectTitle({ project }: { project: Project }) {
   return <span className='flex min-w-0 items-center gap-2'>{content}</span>;
 }
 
-export function Experience() {
+export function Projects() {
   return (
-    <section id='work' className='mt-12 scroll-mt-20 sm:mt-16'>
-      <SectionHeading>Experience</SectionHeading>
+    <section id='projects' className='mt-12 scroll-mt-20 sm:mt-16'>
+      <SectionHeading>Projects</SectionHeading>
       <Accordion type='single' collapsible className='flex flex-col gap-2'>
-        {experience.map((project, i) => (
+        {projects.map((project, i) => (
           <AccordionItem
             key={project.title}
             value={`item-${i}`}

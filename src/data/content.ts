@@ -6,13 +6,7 @@ export type Project = {
   description: string;
 };
 
-export const projects: Project[] = [
-  {
-    title: 'Homelab',
-    meta: 'August 2026 - Present',
-    description:
-      'Self-hosted homelab focused on networking, virtualization, and cybersecurity. Set up and maintain servers, VMs, containers, and network infrastructure using Proxmox and OPNsense, experimenting with firewalls, routing, VLANs, VPNs, network segmentation, and access control.',
-  },
+export const experience: Project[] = [
   {
     title: 'Schneider Electric',
     meta: 'July - August 2026',
@@ -26,6 +20,15 @@ export const projects: Project[] = [
     description:
       'Observation internship within the HW and SW R&D teams at NXP Semiconductors. Discovered semiconductor R&D activities, observed engineers working on electronic components, and gained insight into the technological development cycle and teamwork in an international engineering environment.',
     logo: '/NXP-Logo.svg',
+  },
+];
+
+export const projects: Project[] = [
+  {
+    title: 'Homelab',
+    meta: 'August 2026 - Present',
+    description:
+      'Self-hosted homelab focused on networking, virtualization, and cybersecurity. Set up and maintain servers, VMs, containers, and network infrastructure using Proxmox and OPNsense, experimenting with firewalls, routing, VLANs, VPNs, network segmentation, and access control.',
   },
 ];
 

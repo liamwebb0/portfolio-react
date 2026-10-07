@@ -7,8 +7,8 @@ export function About() {
       <p className='max-w-[480px] leading-7'>
         I’m an engineering student at Polytech Nice-Sophia, interested in
         coding, networking, software, and cybersecurity. I enjoy learning by
-        building and experimenting, and when I don’t know something, I like to
-        dive into it and understand it in detail.
+        building and experimenting, and I learn best through hands-on projects
+        and real-world challenges.
       </p>
     </section>
   );
