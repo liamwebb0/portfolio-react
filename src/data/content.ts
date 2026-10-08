@@ -32,11 +32,11 @@ export const projects: Project[] = [
   },
   {
     title: 'Whytoff Game',
-    meta: '2025 - PeiP1',
+    meta: 'January 2025',
     href: 'https://github.com/liamwebb0/Whytoff_game',
     logo: '/python-logo.svg',
     description:
-      'Implementation of the Whytoff game in Python (Turtle) done in PeiP1 class. Three variants: (1) classic rules version, (2) version with no limit on the number of objects you can take, (3) version where the computer applies the winning strategy and systematically wins.',
+      'Implementation of the Wythoff game in Python with a graphical interface using Turtle. Developed three different game versions, implementing the game logic, user interactions, and graphical elements.',
   },
 ];
 

@@ -31,14 +31,20 @@ function ProjectTitle({ project }: { project: Project }) {
       <ProjectLogo project={project} />
       <span className='truncate'>{project.title}</span>
       {project.href && (
-        <ArrowUpRight className='h-4 w-4 shrink-0 opacity-0 transition-opacity group-hover:opacity-100' />
+        <ArrowUpRight className='h-4 w-4 shrink-0 opacity-100 transition-opacity sm:opacity-0 sm:group-hover:opacity-100' />
       )}
     </>
   );
 
   if (project.href) {
     return (
-      <a href={project.href} className='group flex min-w-0 items-center gap-2'>
+      <a
+        href={project.href}
+        target='_blank'
+        rel='noopener noreferrer'
+        onClick={(e) => e.stopPropagation()}
+        className='group flex min-w-0 items-center gap-2'
+      >
         {content}
       </a>
     );
