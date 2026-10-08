@@ -16,7 +16,7 @@ export function SiteHeader() {
             <h1 className='text-2xl font-medium tracking-tight sm:text-[28px]'>
               Liam Webb
             </h1>
-            <p className='mt-1 text-muted-foreground'>Developer</p>
+            <p className='mt-1 text-muted-foreground'>Software Engineer</p>
           </div>
         </div>
         <ThemeToggle />
